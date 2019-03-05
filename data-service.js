@@ -127,6 +127,7 @@ module.exports.getEmployeesByDepartment = function(department){
     });
     
 }
+
 module.exports.getEmployeesByManager = function(manager){
     var bymanager =[];
     return new Promise((resolve, reject)=>{
@@ -144,5 +145,15 @@ module.exports.getEmployeeByNum = function(num){
             if(theemployee.length ==0)
                 reject("No result returned!");
             resolve(theemployee);
+    });
+}
+
+module.exports.updateEmployee= function(employeeData){
+    var theemployee;
+    return new Promise((resolve, reject)=>{
+        theemployee = employees.filter(element=>{ return element.employeeNum==employeeData.employeeNum});
+        if(theemployee.length ==0)
+            reject("No such employee!");
+        resolve(theemployee);
     });
 }
