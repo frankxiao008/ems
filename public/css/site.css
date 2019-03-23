@@ -1,5 +1,5 @@
 h2{
-    font-family: 'Racing Sans One', cursive;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     
 }
 
@@ -8,7 +8,7 @@ h2{
     
 }
 .navbar-brand{
-    font-family: 'Satisfy', cursive;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 .row{
 
@@ -30,7 +30,50 @@ article .about{
 aside h2 {
     color: rgb(39, 40, 41);
 }
+
+
+
 .navbar-nav li a:hover{
-    text-decoration: underline;
+    background-color: white;
+    text-decoration: underline; 
+    transform: scale(1.2);
+    vertical-align: middle;
+    text-decoration-color: rgb(99, 170, 99);
     
+   
 }
+
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  table tr:nth-child(even){background-color: rgb(251, 252, 253);}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(99, 170, 99);
+    color: white;
+  }
+
+ .homelist li{
+     height: 30px;
+     width: 100px;
+     font-size: medium;
+ }
+
+ .introp {
+    line-height: 25px;
+    font-size: medium;
+ }
